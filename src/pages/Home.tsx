@@ -1,4 +1,5 @@
 import { ArrowRight, Download } from 'lucide-react'
+import { Link } from "react-router-dom";
 
 // Constantes pour éviter la duplication
 const TECHNOLOGIES = ['React', 'TypeScript', 'Tailwind', 'Node.js', 'Python']
@@ -37,30 +38,30 @@ export default function Home() {
           
           {/* Actions principales */}
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            <a 
-              href="./Projets.tsx" 
-              className="btn-primary inline-flex items-center gap-2 group"
+            <Link 
+                to="/Projects.tsx" 
+                className="btn-primary inline-flex items-center gap-2 group"
             >
-              Voir mes projets
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-            </a>
+                Voir mes projets
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            </Link>
+            
+            <Link 
+                to="/Contact.tsx" 
+                className="btn-ghost inline-flex items-center gap-2"
+            >
+                Me contacter
+            </Link>
             
             <a 
-              href="./Contact.tsx" 
-              className="btn-ghost inline-flex items-center gap-2"
+                href="/ADJIEY KOFFI JEAN-LUC JUNIOR CV.pdf" 
+                download 
+                className="btn-ghost inline-flex items-center gap-2 text-sm border-dashed"
             >
-              Me contacter
+                <Download className="w-4 h-4" />
+                Mon CV
             </a>
-            
-            <a 
-              href="/ADJIEY KOFFI JEAN-LUC JUNIOR CV.pdf" 
-              download 
-              className="btn-ghost inline-flex items-center gap-2 text-sm border-dashed"
-            >
-              <Download className="w-4 h-4" />
-              Mon CV
-            </a>
-          </div>
+            </div>
           
           {/* Technologies */}
           <div className="pt-6 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
