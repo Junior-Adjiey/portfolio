@@ -198,15 +198,10 @@ function SkillCard({ skill, color }: { skill: Skill; color: ColorKey }) {
 
 export default function Skills() {
   const [selectedGroup, setSelectedGroup] = useState(0)
-  const [query, setQuery] = useState('')
-  const [projectFilter, setProjectFilter] = useState<string>('all')
+  const [query] = useState('')
+  const [projectFilter] = useState<string>('all')
   const liveRef = useRef<HTMLDivElement | null>(null)
 
-  const allProjects = useMemo(() => {
-    const set = new Set<string>()
-    skillGroups.forEach((g) => g.skills.forEach((s) => s.projects.forEach((p) => set.add(p))))
-    return ['all', ...Array.from(set)] as const
-  }, [])
 
   const currentGroup = skillGroups[selectedGroup]
 
