@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #D9735B;
+  --color-bg: rgba(14,165,233,0.06);
+  --color-text-strong: #0F172A;
+
+  --font-display: "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0B1220;
+    --color-text-strong: #E5E7EB;
+  }
+}
+
+body {
+  background-color: var(--color-bg);
+  color: #0f172a;
+}
+
+.container-app { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+.btn-primary { @apply inline-flex items-center rounded-xl px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5; background: var(--color-primary); }
+.btn-ghost { @apply inline-flex items-center rounded-xl px-5 py-3 text-sm font-semibold border border-slate-300 text-slate-800 hover:bg-slate-50; }
+.badge { @apply px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700; }
+.card { @apply rounded-2xl shadow-xl ring-1 ring-black/10 bg-white; }
+
+.font-display { font-family: var(--font-display); }
+
