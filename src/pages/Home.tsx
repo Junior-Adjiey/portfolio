@@ -38,7 +38,7 @@ export default function Home() {
           {/* Actions principales */}
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             <a 
-              href="/projets" 
+              href="./Projets.tsx" 
               className="btn-primary inline-flex items-center gap-2 group"
             >
               Voir mes projets
@@ -46,7 +46,7 @@ export default function Home() {
             </a>
             
             <a 
-              href="/contact" 
+              href="./Contact.tsx" 
               className="btn-ghost inline-flex items-center gap-2"
             >
               Me contacter
