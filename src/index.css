@@ -8,12 +8,6 @@
   --font-display: "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #0B1220;
-    --color-text-strong: #E5E7EB;
-  }
-}
 
 body {
   background-color: var(--color-bg);

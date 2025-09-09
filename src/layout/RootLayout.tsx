@@ -64,7 +64,7 @@ export default function RootLayout() {
           {/* CTA & Menu mobile */}
           <div className="flex items-center gap-3">
             <a 
-              href="/ADJIEY KOFFI JEAN-LUC JUNIOR CV.pdf" 
+              href="/ADJIEY KOFFI JEAN-LUC JUNIOR CV DEFINITIF.pdf" 
               className="btn-primary text-sm hidden sm:inline-flex"
               download
             >

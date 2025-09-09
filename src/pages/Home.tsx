@@ -54,7 +54,7 @@ export default function Home() {
             </Link>
             
             <a 
-                href="/ADJIEY KOFFI JEAN-LUC JUNIOR CV.pdf" 
+                href="/ADJIEY KOFFI JEAN-LUC JUNIOR CV DEFINITIF.pdf" 
                 download 
                 className="btn-ghost inline-flex items-center gap-2 text-sm border-dashed"
             >
